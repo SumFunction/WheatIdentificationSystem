@@ -1,0 +1,27 @@
+<!--pages/msg/message.wxml-->
+<view id="container">
+  <view class="msgLoader bg-white shadow">
+  <image src="{{url}}"></image>
+  <view>图中识别出的小麦穗数量有：<text style="font-weight:600">{{num}}</text></view>
+  </view>
+</view>
+<view id="danwei">
+    <text style="font-size:13px;font-weight:800;color:gray">单位(px)</text>
+  </view>
+<div>
+  <view class="table">
+  <block wx:for='{{fiveArray}}' wx:key='*this' wx:for-item='oneArray'>
+  <!-- 注意嵌套的数组对象 -->
+    <view class="table-tr" wx:if='{{index<1}}'>
+      <block wx:for='{{oneArray}}' wx:key='id'>
+        <view class="table-th">{{item.name}}</view>
+      </block>
+    </view>
+    <view class="table-tr" wx:else>
+      <block wx:for='{{oneArray}}' wx:key='id'>
+        <view class="table-td">{{item.name}}</view>
+      </block>
+    </view>
+  </block>
+</view>
+</div>

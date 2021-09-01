@@ -1,0 +1,9 @@
+/* pages/classifyDetails/classifyDetails.wxss */
+.img{
+  width: 150px;
+  height: 150px;
+}
+image{
+  width: 100%;
+  height: 100%;
+}

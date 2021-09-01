@@ -1,0 +1,76 @@
+/* pages/demo/demo01.wxss */
+@import "../../app.wxss"
+
+.view_contain{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* uploader */
+.ui_uploader_cell {
+  width: 100%;
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+
+.ui_uploader_item_1{
+  float: left;
+  position: relative;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+  width: 165rpx;
+  height: 165rpx;
+  margin-left: 40rpx;
+}
+.ui_uploader_item{
+  position: relative;
+  margin: 0px auto;
+  width: 500rpx;
+  height: 500rpx;
+}
+.ui_uploader_item_icon{
+  position: absolute;
+  right: -20rpx;
+  top: -20rpx;
+  background: #fff;
+  border-radius: 50%;
+}
+.ui_uploader_item image {
+  width: 95%;
+  height: 95%;
+}
+/* 方框+号 */
+.ui_uploader {
+  position: relative;
+  margin: 0px auto;
+  width: 500rpx;
+  height: 500rpx;
+  border: 2rpx solid #d9d9d9;
+  box-sizing: border-box;
+}
+/* 方框+号 选择图片之前*/
+.ui_uploader:before {
+  content: " ";
+  position: absolute;
+  width: 4rpx;
+  height: 79rpx;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+}
+/* 方框+号 选择图片之后*/
+.ui_uploader:after {
+  content: " ";
+  position: absolute;
+  height: 4rpx;
+  width: 79rpx;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+}
+

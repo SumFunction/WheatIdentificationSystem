@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classifyDetails/classifyDetails", 
+    "pages/countDetalis/countDetalis",
+    "pages/wheatCount/wheatCount", 
+    "pages/wheatClassify/wheatClassify", 
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationStyle": "default",  
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "慧眼识麦",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

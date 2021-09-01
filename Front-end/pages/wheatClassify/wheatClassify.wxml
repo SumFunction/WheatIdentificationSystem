@@ -1,0 +1,33 @@
+<!--pages/demo/demo01.wxml-->
+<view class="view_contain padding">
+  <view class="padding bg-white shadow">
+    <text style="margin-top:50px">请上传单张小麦图片</text>
+    <view class="ui_uploader_cell">
+      <view class='ui_uploader_item' wx:if="{{itemhide}}">
+        <icon class='ui_uploader_item_icon' bindtap='clearImg' type="clear" size="20" color="red" />
+        <image bindtap='showImg' src='{{picturePathLocal}}'></image>
+      </view>
+      <view class='ui_uploader' bindtap='choosePic' wx:if="{{showPic}}"></view>
+    </view>
+    <button bindtap="upload" class="cu-btn round button-hover bg-green shadow">上传识别</button>
+    <loading hidden="{{loadingHidden}}">
+    识别中...
+    </loading>
+  </view>
+  <view class="margin-top bg-white shadow padding bottom cu-list">
+    <view class="text-left padding-bottom">
+      当前系统能识别的病害种类如下：
+    </view>
+    <view class="text-left flex flex-wrap">
+      <view class="padding-right padding-bottom">健康小麦</view>
+      <view class="padding-right">小麦锈病</view>
+      <view class="padding-right">小麦白粉病</view>
+      <view class="padding-right">小麦黑穗病</view>
+      <view class="padding-right">小麦根腐病</view>
+      <view class="padding-right">小麦赤霉病</view>
+      <view class="padding-right">小麦叶枯病</view>
+    </view>
+  </view>
+</view>
+
+

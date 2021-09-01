@@ -1,0 +1,14 @@
+/* pages/index/index.wxss */
+@import "../../app.wxss"
+#test1{
+  width:25px;
+  height:25px;
+}
+#test2{
+  width:20px;
+  height:20px;
+}
+image{
+  width:100%;
+  height:100%
+}

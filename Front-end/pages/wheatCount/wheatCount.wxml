@@ -1,0 +1,29 @@
+<!--pages/demo/demo01.wxml-->
+<view class="view_contain padding">
+  <view class="padding bg-white shadow">
+    <text style="margin-top:50px">请上传单张小麦图片</text>
+    <view class="ui_uploader_cell">
+      <view class='ui_uploader_item' wx:if="{{itemhide}}">
+        <icon class='ui_uploader_item_icon' bindtap='clearImg' type="clear" size="20" color="red" />
+        <image bindtap='showImg' src='{{picturePathLocal}}'></image>
+      </view>
+      <view class='ui_uploader' bindtap='choosePic' wx:if="{{showPic}}"></view>
+    </view>
+    <button bindtap="upload" class="cu-btn round button-hover bg-green shadow">上传识别</button>
+    <loading hidden="{{loadingHidden}}">
+    识别中...
+    </loading>
+  </view>
+  <view class="margin-top bg-white shadow padding bottom">
+    <view class="text-left">
+      说明：上传的图片请上传在小麦顶部拍摄的照片， 否则系统的识别效果较差。
+    </view>
+    <view class="text-left padding">
+      示例图：
+    </view>
+    <image src="../../images/show.jpg" >
+    </image>
+  </view>
+</view>
+
+

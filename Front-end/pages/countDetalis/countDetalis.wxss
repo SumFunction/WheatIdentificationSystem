@@ -1,0 +1,69 @@
+/* pages/msg/message.wxss */
+@import "../../app.wxss";
+.msgLoader{
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+image{
+  width: 100%;
+  height: 350px;
+}
+div{
+  margin: 0px auto;
+  display: block;
+  width: 90%;
+  height: 180px;
+  overflow-y: scroll;
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.10);
+}
+.table {
+  display: table;
+  width: 100%;
+  /* border-collapse 属性设置表格的边框是否被合并为一个单一的边框，解决相邻单元格边框未合并导致有些边框变粗的视觉效果 */
+  border-collapse: collapse;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+.table-tr {
+  display: table-row;
+  width: 100%;
+  height: 20px;
+}
+
+.table-th {
+
+  display: table-cell;
+  font-weight: bold;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #66CC66;
+}
+.table-th:first-child{
+  border-radius: 5px 0 0 0;
+}
+.table-th:last-child{
+  border-radius: 0 5px 0 0;
+}
+
+.table-td {
+  display: table-cell;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 200;
+}
+#danwei{
+  width: 90%;
+  margin:0px auto;
+  padding-bottom: 5px;
+}
+#container{
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}

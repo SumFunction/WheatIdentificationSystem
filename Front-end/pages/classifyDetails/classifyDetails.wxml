@@ -1,0 +1,36 @@
+<!--pages/classifyDetails/classifyDetails.wxml-->
+<view class="padding container">
+  <view class="padding bg-white shadow">
+    <view class="padding-bottom-sm" style="font-size:20px">{{chiName}}</view>
+    <view class="text-gray padding-bottom" style="font-style:italic">{{engName}}</view>
+    <view class="padding-bottom" style="font-size:15px">可信度：{{acc}}%</view>
+    <view class="flex padding-bottom">
+      <view class="img">
+        <image src="{{url1}}"></image>
+      </view>
+      <view class="img" style="margin-left: 25px;">
+        <image src="{{url2}}"></image>
+      </view>
+    </view>
+    <view>
+        <text style="font-size:15px;font-weight:700">{{curtime}}  </text>
+        <text> {{time}}</text>
+    </view>
+  </view>
+  <view class="padding bg-white shadow" style="margin-top:20px">
+    <view class="padding-bottom" style="font-size:20px;font-weight:700">简要介绍</view>
+    <view class="" style="font-size:13px;text-indent:20px">{{introduce}}</view>
+  </view>
+  <view class="padding bg-white shadow" style="margin-top:20px">
+    <view class="padding-bottom" style="font-size:20px;font-weight:700">表现特征</view>
+    <view class="" style="font-size:13px;text-indent:20px">{{feature}}</view>
+  </view>
+  <view class="padding bg-white shadow" style="margin-top:20px">
+    <view class="padding-bottom" style="font-size:20px;font-weight:700">防治措施</view>
+    <view class="" style="font-size:13px;text-indent:20px">{{measure}}</view>
+  </view>
+  <view class="padding bg-white shadow" style="margin-top:20px">
+    <view class="padding-bottom" style="font-size:20px;font-weight:700">流行规律</view>
+    <view class="" style="font-size:13px;text-indent:20px">{{regular}}</view>
+  </view>
+</view>
